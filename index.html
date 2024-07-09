@@ -5,41 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagor Sutra Dhor's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Sagor Sutra Dhor</h1>
-        <h2>Computer Science Student</h2>
-        <p>Driven by unwavering ethical values and a dedication to continuous growth, my mission is to uphold a standard of character that fosters trust, teamwork, and positive outcomes within any professional context.</p>
+        <nav>
+            <div class="logo">SAGOR</div>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="home">
+            <div class="hero-content">
+                <img src="1705312088696.jpeg" alt="Sagor Sutra Dhor" class="profile-pic">
+                <h1>Hello!<br>I'm <span>Sagor Sutra Dhor</span></h1>
+                <h2>A Computer Science Student</h2>
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#projects" class="btn">My Works</a>
+            </div>
+        </div>
     </header>
 
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <ul>
-            <li><strong>Phone:</strong> +1 718 496 5287</li>
-            <li><strong>Email:</strong> <a href="mailto:sagorsut.dhor@smail.astate.edu">sagorsut.dhor@smail.astate.edu</a></li>
-            <li><strong>Website:</strong> <a href="http://www.fancyArtBD.com" target="_blank">www.fancyArtBD.com</a></li>
-            <li><strong>Address:</strong> 1830 E Johnson Ave, #2, Jonesboro, AR 72401</li>
-        </ul>
+    <section id="about" class="box">
+        <h2>About Me</h2>
+        <p>Driven by unwavering ethical values and a dedication to continuous growth, my mission is to uphold a standard of character that fosters trust, teamwork, and positive outcomes within any professional context.</p>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
+    <section id="resume" class="box">
+        <h2>Resume</h2>
+        <h3>Education</h3>
         <ul>
             <li>
-                <h3>Bachelor of Computer Science</h3>
+                <h4>Bachelor of Computer Science</h4>
                 <p>Arkansas State University, 2105 Aggie Rd, Jonesboro, AR 72401</p>
                 <p>CGPA: 3.67 (Up until Now)</p>
                 <p>2022 - Ongoing</p>
             </li>
             <li>
-                <h3>High School (Intermediate)</h3>
+                <h4>High School (Intermediate)</h4>
                 <p>Ibne Taimiya College, Tomchombridge' Hospital Rd, Comilla. 1100</p>
                 <p>GPA: 4.73 (Out of 5.00)</p>
                 <p>2017 - 2019</p>
             </li>
             <li>
-                <h3>High School</h3>
+                <h4>High School</h4>
                 <p>Amishapara MK High School, Amishapara, Sonaimuri, Noakhali, 3836</p>
                 <p>GPA: 4.58 (Out of 5.00)</p>
                 <p>2015 - 2017</p>
@@ -47,72 +61,61 @@
         </ul>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="box">
         <h2>Skills</h2>
         <ul>
-            <li><strong>Programming Languages:</strong> Solid grasp of Python and HTML, enthusiastic about C++ and Java.</li>
-            <li><strong>Graphics and Visual Art:</strong> Proficient in traditional visual art techniques and digital art.</li>
-            <li><strong>Critical Thinking:</strong> Keen aptitude for critical thinking, enabling strategic insight and sound reasoning.</li>
+            <li><i class="fas fa-code"></i> Programming Languages: Solid grasp of Python, C++, Data Structure, HTML, CSS, enthusiastic about ML and Javascript.</li>
+            <li><i class="fas fa-paint-brush"></i> Graphics and Visual Art: Proficient in traditional visual art techniques and digital art.</li>
+            <li><i class="fas fa-brain"></i> Critical Thinking: Keen aptitude for critical thinking, enabling strategic insight and sound reasoning.</li>
         </ul>
     </section>
 
-    <section id="interests">
-        <h2>Interests</h2>
+    <section id="projects" class="box">
+        <h2>Projects</h2>
+        <strong>GitHub Profile</strong>
+            <p><a href="https://github.com/Sagor2050" target="_blank">github.com/Sagor2050</a></p>
+        <div class="project-section">
+            <h3>Frontend</h3>
+            <ul>
+                <li>
+                    <strong>Portfolio Website</strong>
+                    <p><a href="https://Sagor2050.github.io" target="_blank">Sagor2050.github.io</a></p>
+                    <p>A personal portfolio website showcasing my projects and skills. Built with HTML, CSS, and JavaScript.</p>
+                </li>
+                <li>
+                    <strong>Weather App (Work in Progress)</strong>
+                    <p>A weather forecast application using React.js and OpenWeather API to provide real-time weather data.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="project-section">
+            <h3>Backend</h3>
+            <ul>
+                <li>
+                    <strong>RESTful API for E-commerce (Work in Progress)</strong>
+                    <p>Developed a RESTful API using Node.js and Express.js for an e-commerce application, including user authentication and product management.</p>
+                </li>
+                <li>
+                    <strong>Chat Application (Work in Progress)</strong>
+                    <p>A real-time chat application using Python and Flask, with WebSocket for live messaging features.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="box">
+        <h2>Contact Information</h2>
         <ul>
-            <li>Drawing and Painting</li>
-            <li>Photography</li>
-            <li>Social Work</li>
-            <li>Solving Puzzles</li>
+            <li><i class="fas fa-phone"></i> +1 718 496 5287</li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:sagorsd975@gmail.com">sagorsd975@gmail.com</a></li>
+            <li><i class="fas fa-globe"></i> <a href="http://www.linkedin.com/in/sagarsd" target="_blank">www.linkedin.com/in/sagarsd</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> 806 Bergen St, Brooklyn, NY</li>
         </ul>
     </section>
 
-    <section id="languages">
-        <h2>Languages</h2>
-        <ul>
-            <li>Bengali</li>
-            <li>English</li>
-            <li>Hindi</li>
-        </ul>
-    </section>
-
-    <section id="experience">
-        <h2>Experiences and Extracurricular Activities</h2>
-        <ul>
-            <li>
-                <h3>Founder of Fancy Art BD</h3>
-                <p>A drawing learning academy founded in 2019. 7 teachers and over 50 students. Courses in Digital Art, Illustration, and Traditional Art. Online drawing course starting soon.</p>
-                <p><a href="https://youtube.com/c/FancyArtBD" target="_blank">YouTube Channel</a></p>
-            </li>
-            <li>
-                <h3>Founding Member of SHBO (Service for Human Being Organization)</h3>
-                <p>Non-profit volunteer organization. Roles include creating website, raising funds, and managing social media.</p>
-            </li>
-            <li>
-                <h3>Volunteer at Wolf Life Campus Ministry</h3>
-            </li>
-        </ul>
-    </section>
-
-    <section id="references">
-        <h2>References</h2>
-        <ul>
-            <li>
-                <strong>Prof. Younus Bhuiyan</strong>
-                <p>English Professor, Ibne Taimiya College</p>
-                <p><a href="mailto:ybhujiya@itsc.edu">ybhujiya@itsc.edu</a></p>
-            </li>
-            <li>
-                <strong>Dr. Aabhijit Bhattacharya</strong>
-                <p>Inaugural Dean, College of Engineering and Computer Science</p>
-                <p><a href="mailto:abbhattacharyya@AState.edu">abbhattacharyya@AState.edu</a></p>
-            </li>
-            <li>
-                <strong>Lisa Ferrell</strong>
-                <p>Developmental Reading Instructor, Arkansas State University</p>
-                <p><a href="mailto:lferrell@AState.edu">lferrell@AState.edu</a></p>
-            </li>
-        </ul>
-    </section>
+    <footer>
+        <p>&copy; 2024 Sagor Sutra Dhor. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
