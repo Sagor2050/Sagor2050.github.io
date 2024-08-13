@@ -3,120 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagor Sutra Dhor's Portfolio</title>
+    <title>My Portfolio</title>
+    <!-- Linking external stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">SAGOR</div>
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
+    <!-- Main container to hold sidebar and content -->
+    <div class="container">
+
+        <!-- Sidebar section -->
+        <aside class="sidebar">
+            <div class="logo">SD</div> <!-- Logo at the top of the sidebar -->
+            <ul class="nav">
+                <li><a href="#home" class="active">Home</a></li> <!-- Navigation links -->
                 <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="#resume">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-        <div class="hero" id="home">
-            <div class="hero-content">
-                <img src="1705312088696.jpeg" alt="Sagor Sutra Dhor" class="profile-pic">
-                <h1>Hello!<br>I'm <span>Sagor Sutra Dhor</span></h1>
-                <h2>A Computer Science Student</h2>
-                <a href="#contact" class="btn">Hire Me</a>
-                <a href="#projects" class="btn">My Works</a>
-            </div>
-        </div>
-    </header>
+            <!-- Dark mode toggle button -->
+            <button id="dark-mode-toggle" class = "btn">Dark Mode</button>
+        </aside>
 
-    <section id="about" class="box">
-        <h2>About Me</h2>
-        <p>Driven by unwavering ethical values and a dedication to continuous growth, my mission is to uphold a standard of character that fosters trust, teamwork, and positive outcomes within any professional context.</p>
-    </section>
+        <!-- Main content section -->
+        <div class="content">
 
-    <section id="resume" class="box">
-        <h2>Resume</h2>
-        <h3>Education</h3>
-        <ul>
-            <li>
-                <h4>Bachelor of Computer Science</h4>
-                <p>Arkansas State University, 2105 Aggie Rd, Jonesboro, AR 72401</p>
-                <p>CGPA: 3.67 (Up until Now)</p>
-                <p>2022 - Ongoing</p>
-            </li>
-            <li>
-                <h4>High School (Intermediate)</h4>
-                <p>Ibne Taimiya College, Tomchombridge' Hospital Rd, Comilla. 1100</p>
-                <p>GPA: 4.73 (Out of 5.00)</p>
-                <p>2017 - 2019</p>
-            </li>
-            <li>
-                <h4>High School</h4>
-                <p>Amishapara MK High School, Amishapara, Sonaimuri, Noakhali, 3836</p>
-                <p>GPA: 4.58 (Out of 5.00)</p>
-                <p>2015 - 2017</p>
-            </li>
-        </ul>
-    </section>
+            <!-- Hero section -->
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <img src="photo.jpeg" alt="Sagor Sutra Dhor" class="profile-pic">
+                    <h1>Hello!<br>I'm <span>Sagor Sutra Dhor</span></h1>
+                    <h2>A Computer Science Student</h2>
+                    <button onclick = "scrollToProjects()" class="btn"> Projects </button>
+                    <button onclick = "openPDF()" class="btn">Resume</button>
+                </div>
+            </section>
 
-    <section id="skills" class="box">
-        <h2>Skills</h2>
-        <ul>
-            <li><i class="fas fa-code"></i> Programming Languages: Solid grasp of Python, C++, Data Structure, HTML, CSS, enthusiastic about ML and Javascript.</li>
-            <li><i class="fas fa-paint-brush"></i> Graphics and Visual Art: Proficient in traditional visual art techniques and digital art.</li>
-            <li><i class="fas fa-brain"></i> Critical Thinking: Keen aptitude for critical thinking, enabling strategic insight and sound reasoning.</li>
-        </ul>
-    </section>
+            <!-- About Me section -->
+            <section id="about" class="box">
+                <h2>About me</h2>
+                <p>"I’m Sagor Sutra Dhor, a CUNY CS major student and
+                     full-stack developer with a serious passion for 
+                     modern technologies. Always eager to dive into the latest
+                    innovations, I’m the person who’ll try anything just to
+                     see how it works."</p>
+            </section>
 
-    <section id="projects" class="box">
-        <h2>Projects</h2>
-        <strong>GitHub Profile</strong>
-            <p><a href="https://github.com/Sagor2050" target="_blank">github.com/Sagor2050</a></p>
-        <div class="project-section">
-            <h3>Frontend</h3>
-            <ul>
-                <li>
-                    <strong>Portfolio Website</strong>
-                    <p><a href="https://Sagor2050.github.io" target="_blank">Sagor2050.github.io</a></p>
-                    <p>A personal portfolio website showcasing my projects and skills. Built with HTML, CSS, and JavaScript.</p>
-                </li>
-                <li>
-                    <strong>Weather App (Work in Progress)</strong>
-                    <p>A weather forecast application using React.js and OpenWeather API to provide real-time weather data.</p>
-                </li>
-            </ul>
-        </div>
-        <div class="project-section">
-            <h3>Backend</h3>
-            <ul>
-                <li>
-                    <strong>RESTful API for E-commerce (Work in Progress)</strong>
-                    <p>Developed a RESTful API using Node.js and Express.js for an e-commerce application, including user authentication and product management.</p>
-                </li>
-                <li>
-                    <strong>Chat Application (Work in Progress)</strong>
-                    <p>A real-time chat application using Python and Flask, with WebSocket for live messaging features.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+            <!-- Resume section with downloadable PDF link -->
+            <section id="resume" class="box">
+                <h2>Education</h2>
 
-    <section id="contact" class="box">
-        <h2>Contact Information</h2>
-        <ul>
-            <li><i class="fas fa-phone"></i> +1 718 496 5287</li>
-            <li><i class="fas fa-envelope"></i> <a href="mailto:sagorsd975@gmail.com">sagorsd975@gmail.com</a></li>
-            <li><i class="fas fa-globe"></i> <a href="http://www.linkedin.com/in/sagarsd" target="_blank">www.linkedin.com/in/sagarsd</a></li>
-            <li><i class="fas fa-map-marker-alt"></i> 806 Bergen St, Brooklyn, NY</li>
-        </ul>
-    </section>
+                <ul>
+                    <li>
+                        <h4>BSc in Computer Science, City University of Ney York</h4>
+                        <p>Brooklyn College</p>
+                        <p>CGPA: 3.67 (Up until Now)</p>
+                        <p>August 2024 - Ongoing</p>
+                    </li>
+                    <li>
+                        <h4>BSc in Computer Science</h4>
+                        <p>Arkansas State University, 2105 Aggie Rd, Jonesboro, AR 72401</p>
+                        <p>CGPA: 3.67 </p>
+                        <p>2022 - 2024</p>
+                    </li>
+                    <li>
+                        <h4>High School (Intermediate)</h4>
+                        <p>Ibne Taimiya College, Tomchombridge' Hospital Rd, Comilla. 1100</p>
+                        <p>GPA: 4.73 (Out of 5.00)</p>
+                        <p>2017 - 2019</p>
+                    </li>
+                    <li>
+                        <h4>High School</h4>
+                        <p>Amishapara MK High School, Amishapara, Sonaimuri, Noakhali, 3836</p>
+                        <p>GPA: 4.58 (Out of 5.00)</p>
+                        <p>2015 - 2017</p>
+                    </li>
+                </ul>
+            </section>
 
-    <footer>
-        <p>&copy; 2024 Sagor Sutra Dhor. All rights reserved.</p>
-    </footer>
+            <!-- Skills section -->
+            <section id="skills" class="box">
+                <h2>Skills</h2>
+                <ul>
+                    <li><i class="fas fa-code"></i><strong>Programming Languages:</strong> Solid grasp of Python, C++,Javs, Data Structure, HTML, CSS, Javascript enthusiastic about ML.</li>
+                    <li><i class="fas fa-paint-brush"></i> <strong>Graphics and Visual Art:</strong> Proficient in traditional visual art techniques and digital art.</li>
+                    <li><i class="fas fa-brain"></i> <strong>Critical Thinking:</strong> Keen aptitude for critical thinking, enabling strategic insight and sound reasoning.</li>
+                </ul>
+            </section>
 
+            <!-- Projects section -->
+            <section id="projects" class="box">
+                <h2>Projects</h2>
+                <strong>GitHub Profile</strong>
+                <p><a href="https://github.com/Sagor2050" target="_blank">github.com/Sagor2050</a></p>
+                <div class="project-section">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>
+                            <p class = "project-heading">Portfolio Website</p>
+                            <p><a href="https://Sagor2050.github.io" target="_blank">Sagor2050.github.io</a></p>
+                            <p>A personal portfolio website showcasing my projects and skills. Built with HTML, CSS, and JavaScript.</p>
+                        </li>
+                        <li>
+                            <p class = "project-heading">Weather App </p>
+                            <p>A weather forecast application to provide real-time weather data.</p>
+                            <p>Utilized React.js and OpenWeather API; handled 1000+ API requests daily and managed state in a
+                                complex React application with 20+ components.Provided accurate weather information for over 200 cities</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-section">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>
+                            <p class = "project-heading">RESTful API for E-commerce </p>
+                            <p>Developed a RESTful API using Node.js and Express.js for an e-commerce application, including user authentication and product management.</p>
+                            <p>Implemented secure authentication with JWT and bcrypt, and created CRUD endpoints for products.
+                                Achieved a scalable and secure API, enhancing user experience and integration with the front-end.</p>
+                        </li>
+                        <li>
+                            <p class = "project-heading">Chat Application (Work in Progress)</p>
+                            <p>A real-time chat application using Python and Flask, with WebSocket for live messaging features.</p>
+                            <p>Handled 10,000+ messages daily with a real-time update interface.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact Information section -->
+            <section id="contact" class="box">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +1 718 496 5287</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:sagorsd975@gmail.com">sagorsd975@gmail.com</a></li>
+                    <li><i class="fas fa-globe"></i> <a href="http://www.linkedin.com/in/sagarsd" target="_blank">www.linkedin.com/in/sagarsd</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> 806 Bergen St, Brooklyn, NY</li>
+                </ul>
+            </section>
+
+            <!-- Footer section -->
+            <footer>
+                <p>&copy; 2024 Sagor Sutra Dhor. All rights reserved.</p>
+            </footer>
+
+        </div> <!-- End of content -->
+    </div> <!-- End of container -->
+
+    <!-- Linking the external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
